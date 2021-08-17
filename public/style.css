@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700&display=swap');
+body{
+    height: 100vh;
+    overflow-x: hidden;
+    font-family: 'Montserrat';
+}
+.main-container{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 120px 0px;
+}
+.link-container{
+    padding: 30px 80px;
+    border: 1px solid #ddd;
+    width: 35%;
+    border-radius: 10px;
+    box-shadow: 2px 3px 3px #ddd;
+}
+.title{
+    text-align: center;
+    margin-bottom: 30px;
+}
+.title p, .title h2{
+    margin: 0%;
+}
+.title h2{
+    margin: 10px;
+}
+.img-cont{
+    width: 10%;
+    margin-top: 100px;
+}
+.img-cont img{
+    position: relative;
+    max-width: 100%;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+.link-container{
+    margin-bottom: 120px;
+}
+.card{
+    display: block;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 18px;
+    color: #fff!important;
+    margin: 20px 0px;
+    font-weight: 500;
+    transition: all 0.3s;
+}
+.card:hover{
+    transform: translateX(12px);
+}
+a{
+    color: #fff;
+    text-decoration: none;
+}
+.card:nth-child(1){
+    background-color: rgb(114, 187, 155);
+}
+.card:nth-child(2){
+    background-color: rgb(108, 172, 215);
+}
+.card:nth-child(3){
+    background-color: rgb(142, 122, 216);
+}
+.card:nth-child(4){
+    background-color: rgb(230, 185, 78);
+}
+.card:nth-child(5){
+    background-color: rgb(190, 70, 83);
+}
+.card:nth-child(6){
+    background-color: rgb(103, 108, 119);
+}
+.card:nth-child(7){
+    background-color: rgb(156, 190, 89);
+}
+
+@media(max-width: 1000px){
+    .img-cont{
+        width: 20%;
+    }
+    .main-container{
+        margin-top: 60px;
+    }
+    .link-container{
+        padding: 30px;
+        border: 1px solid #ddd;
+        width: 80%;
+    }
+    .card{
+        font-size: 16px;
+    }
+    .card:focus{
+        transform: translateX(12px);
+    }
+}
+
+@media(max-width: 730px){
+    .img-cont{
+        width: 30%;
+    }
+    .main-container{
+        margin-top: 80px;
+    }
+    .link-container{
+        padding: 30px;
+        border: 1px solid #ddd;
+        width: 80%;
+    }
+}
+
+@media(max-width: 730px){
+    .img-cont{
+        width: 30%;
+    }
+    .main-container{
+        margin-top: 120px;
+    }
+    .link-container{
+        padding: 30px;
+        border: 1px solid #ddd;
+        width: 80%;
+    }
+}
+
+

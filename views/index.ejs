@@ -1,0 +1,29 @@
+<%- include('partials/head.ejs'); %>
+
+    <div class="main-container">
+        <div class="img-cont">
+            <img src="avtar.jpg" alt="My Avtar">
+        </div>
+        <div class="title">
+            <h2>Shubham Gautam</h2>
+            <p>Idk, hello? Personal links here...</p>
+        </div>
+        <div class="link-container">
+            <div class="links">
+                
+                <% for (const link in links) { %>
+    
+                    <a href="<%= links[link] %>" class="card">
+                        <div class="">
+                            <%= link%>
+                        </div>
+                    </a>
+
+                <% } %>
+            
+            </div>
+        </div>
+    </div>
+        
+
+<%- include('partials/footer.ejs'); %>
